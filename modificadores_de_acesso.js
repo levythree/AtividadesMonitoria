@@ -6,7 +6,7 @@ class Pessoa {
         this._sobrenome = sobrenome;
         this.idade = idade;
 
-        _listaDePessoas.push(this);
+        Pessoa._listaDePessoas.push(this);
     }
 
     get nome() {
@@ -32,6 +32,8 @@ class Pessoa {
     set idade(idade) {
         if (idade >= 18) {
             this._idade = idade;
+        } else {
+            this._idade = null;
         }
     }
 
@@ -50,13 +52,21 @@ class Pessoa {
         return Pessoa._listaDePessoas;
     }
 
-    get mediaDeIdade() {
-        const media = 0;
+    static get mediaDeIdade() {
+        let soma = 0;
 
-        for (let pessoa in _listaDePessoas) {
-            media += pessoa._idade;
+        for (let pessoa of Pessoa._listaDePessoas) {
+            soma += pessoa._idade;
         }
 
-        return media / _listaDePessoas.length;
+        return soma / Pessoa._listaDePessoas.length;
     }
+
+    
+    /* 
+        static get mediaDeIdade() {
+            return Pessoa._listaDePessoas.reduce((acumulador, valorAtual) => acumulador += valorAtual._idade, 0) / Pessoa._listaDePessoas.length;
+        }
+    */
+   
 }

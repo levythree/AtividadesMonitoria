@@ -18,9 +18,12 @@
 5. Implemente um método **get** que retorne o nome completo da pessoa (`nome` e `sobrenome`). 
 6. Implemente um método **set** que tome como parâmetro o nome completo de uma pessoa para alterar as propriedades de `nome` e `sobrenome`.  
     Ex.: `pessoa.setNomeCompleto("Levy Abreu");`  
-    Nesse exemplo, as propriedades `nome` e `sobrenome` precisam ser alteradas para **Levy** e **Abreu**, respectivamente.
-7. Para uma nova pessoa ser instanciada, ela precisa ter no mínimo 18 anos de idade. Modifique o método `set` do atributo **idade** para que essa restrição seja implementada no código.
-8. Modifique também o **construtor** da classe, implementando o método `set` de **idade** nele.
-9. Com base no conceito de atributos estáticos, crie uma propriedade estática privada chamada `listaDePessoas` e implemente seu método `get`.
-10. Modifique o **construtor** da classe, de modo que sempre que um novo objeto for criado, ele seja adicionado na `listaDePessoas`.
-11. Implemente um método `get` estático que retorne a média de idade de todas as pessoas que estão na `listaDePessoas`.
+    Nesse exemplo, `nome` e `sobrenome` precisam ser alterados para **Levy** e **Abreu**, respectivamente.
+7. Implemente uma restrição no código onde uma pessoa precisa ter no mínimo **18 anos de idade**. Caso uma pessoa seja cadastrada com menos de 18 anos ou caso uma pessoa tenha sua idade alterada para uma valor menor do que 18, faça com que `idade` seja **nula**.
+    - Ex.: `const pessoa = new Pessoa("Levy", "Abreu", 10);`  
+      - Nesse exemplo, `idade` deve ser cadastrada como `null`.
+    - Ex.: `pessoa.setIdade(10);`  
+      - Nesse exemplo, `idade` deve ser alterada para `null`.
+8.  Crie uma propriedade estática privada chamada `listaDePessoas` e implemente seu método `get`.
+9.  Modifique o construtor da classe, fazendo com que sempre que um novo objeto for criado, ele seja adicionado na lista de pessoas.
+10. Implemente um método `get` estático que retorne a média de idade de todas as pessoas que estão na lista de pessoas.
