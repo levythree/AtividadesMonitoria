@@ -1,4 +1,4 @@
-**INSTITUTO FEDERAL DE ALAGOAS - IFAL / CAMPUS MACEIÓ**
+**INSTITUTO FEDERAL DE ALAGOAS - IFAL / CAMPUS MACEIÓ**<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/Instituto_Federal_Marca_2015.svg/1200px-Instituto_Federal_Marca_2015.svg.png" style="zoom:7%; float:right;" />
 
 **Curso Técnico em Desenvolvimento de Sistemas**  
 **Disciplina de Programação Orientada a Objetos**
@@ -6,7 +6,9 @@
 *Monitor Levy Abreu*  
 *lac4@aluno.ifal.edu.br*
 
-# Atividade de fixação - Modificadores de Acesso
+# Atividade de monitoria
+
+### Modificadores de Acesso
 
 1. Crie uma classe chamada `Pessoa` com os seguintes atributos:
     - `nome`: o primeiro nome da pessoa.
