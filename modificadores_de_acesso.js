@@ -61,12 +61,10 @@ class Pessoa {
 
         return soma / Pessoa._listaDePessoas.length;
     }
-
     
     /* 
         static get mediaDeIdade() {
             return Pessoa._listaDePessoas.reduce((acumulador, valorAtual) => acumulador += valorAtual._idade, 0) / Pessoa._listaDePessoas.length;
         }
-    */
-   
+    */  
 }
